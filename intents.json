@@ -1,0 +1,2288 @@
+{
+    "intents": [
+      {"tag": "Intro",
+         "patterns": ["hi", 
+                      "how are you", 
+                      "is anyone there", 
+                      "hello", 
+                      "whats up",
+                      "hey",
+                      "yo",
+                      "listen", 
+                      "please help me",
+                      "i am learner from",
+                      "i belong to",
+                      "aiml batch",
+                      "aifl batch",
+                      "i am from",
+                      "my pm is",
+                      "blended",
+                      "online",
+                      "i am from",
+                      "hey ya",
+                      "talking to you for first time"],
+         "responses": ["Hello! I'm your personalized assistant. How can i help you ?"]
+        },
+        {"tag": "Exit",
+         "patterns": ["thank you", 
+                      "thanks", 
+                      "cya",
+                      "see you",
+                      "later", 
+                      "see you later", 
+                      "goodbye", 
+                      "i am leaving", 
+                      "have a Good day",
+                      "you helped me",
+                      "thanks a lot",
+                      "thanks a ton",
+                      "you are the best",
+                      "great help",
+                      "too good",
+                      "you are a good learning buddy"],
+         "responses": ["I hope I was able to assist you, Good Bye"]
+        },
+        {
+            "tag": "Greeting",
+            "patterns": [
+                  "Hi",
+                  "Hi there",
+                  "Hola",
+                  "Hello",
+                  "Hello there",
+                  "Hya",
+                  "Hya there"
+            ],
+            "responses": [
+                  "Hi human, please tell me your GeniSys user",
+                  "Hello human, please tell me your GeniSys user",
+                  "Hola human, please tell me your GeniSys user"
+            ]
+      },
+      {
+            "tag": "GreetingResponse",
+            "patterns": [
+                  "My user is Adam",
+                  "This is Adam",
+                  "I am Adam",
+                  "It is Adam",
+                  "My user is Bella",
+                  "This is Bella",
+                  "I am Bella",
+                  "It is Bella"
+            ],
+            "responses": [
+                  "Great! Hi <HUMAN>! How can I help?",
+                  "Good! Hi <HUMAN>, how can I help you?",
+                  "Cool! Hello <HUMAN>, what can I do for you?",
+                  "OK! Hola <HUMAN>, how can I help you?",
+                  "OK! hi <HUMAN>, what can I do for you?"
+            ]
+      },
+      {
+            "tag": "CourtesyGreeting",
+            "patterns": [
+                  "How are you?",
+                  "Hi how are you?",
+                  "Hello how are you?",
+                  "Hola how are you?",
+                  "How are you doing?",
+                  "Hope you are doing well?",
+                  "Hello hope you are doing well?"
+            ],
+            "responses": [
+                  "Hello, I am great, how are you? Please tell me your GeniSys user",
+                  "Hello, how are you? I am great thanks! Please tell me your GeniSys user",
+                  "Hello, I am good thank you, how are you? Please tell me your GeniSys user",
+                  "Hi, I am great, how are you? Please tell me your GeniSys user",
+                  "Hi, how are you? I am great thanks! Please tell me your GeniSys user",
+                  "Hi, I am good thank you, how are you? Please tell me your GeniSys user",
+                  "Hi, good thank you, how are you? Please tell me your GeniSys user"
+            ]
+      },
+      {
+            "tag": "CourtesyGreetingResponse",
+            "patterns": [
+                  "Good thanks! My user is Adam",
+                  "Good thanks! This is Adam",
+                  "Good thanks! I am Adam",
+                  "Good thanks! It is Adam",
+                  "Great thanks! My user is Bella",
+                  "Great thanks! This is Bella",
+                  "Great thanks! I am Bella",
+                  "Great thanks! It is Bella"
+            ],
+            "responses": [
+                  "Great! Hi <HUMAN>! How can I help?",
+                  "Good! Hi <HUMAN>, how can I help you?",
+                  "Cool! Hello <HUMAN>, what can I do for you?",
+                  "OK! Hola <HUMAN>, how can I help you?",
+                  "OK! hi <HUMAN>, what can I do for you?"
+            ]
+      },
+      {
+            "tag": "CurrentHumanQuery",
+            "patterns": [
+                  "What is my name?",
+                  "What do you call me?",
+                  "Who do you think I am?",
+                  "What do you think I am?",
+                  "Who are you talking to?",
+                  "What name do you call me by?",
+                  "Tell me my name"
+            ],
+            "responses": [
+                  "You are <HUMAN>! How can I help?",
+                  "Your name is  <HUMAN>, how can I help you?",
+                  "They call you <HUMAN>, what can I do for you?",
+                  "Your name is <HUMAN>, how can I help you?",
+                  "<HUMAN>, what can I do for you?"]
+      },
+      {
+            "tag": "NameQuery",
+            "patterns": [
+                  "What is your name?",
+                  "What could I call you?",
+                  "What can I call you?",
+                  "What do your friends call you?",
+                  "Who are you?",
+                  "Tell me your name?"
+            ],
+            "responses": [
+                  "You can call me Geni",
+                  "You may call me Geni",
+                  "Call me Geni"
+            ]
+      },
+      {
+            "tag": "RealNameQuery", 
+            "patterns": [
+                  "What is your real name?",
+                  "What is your real name please?",
+                  "What's your real name?",
+                  "Tell me your real name?",
+                  "Your real name?",
+                  "Your real name please?",
+                  "Your real name please?"
+            ],
+            "responses": [
+                  "My name is GeniSys",
+                  "GeniSys",
+                  "My real name is GeniSys" 
+            ]
+      },
+      { 
+            "tag": "TimeQuery",
+            "patterns": [
+                  "What is the time?",
+                  "What's the time?",
+                  "Do you know what time it is?",
+                  "Do you know the time?",
+                  "Can you tell me the time?",
+                  "Tell me what time it is?",
+                  "Time"
+            ],
+            "responses": [
+                  "One moment",
+                  "One sec",
+                  "One second"
+            ]
+      },
+      {
+            "tag": "Thanks",
+            "patterns": [
+                  "OK thank you",
+                  "OK thanks",
+                  "OK",
+                  "Thanks",
+                  "Thank you",
+                  "That's helpful"
+            ],
+            "responses": [
+                  "No problem!",
+                  "Happy to help!",
+                  "Any time!",
+                  "My pleasure"
+            ]
+      },
+      {
+            "tag": "NotTalking2U",
+            "patterns": [
+                  "I am not talking to you",
+                  "I was not talking to you",
+                  "Not talking to you",
+                  "Wasn't for you",
+                  "Wasn't meant for you",
+                  "Wasn't communicating to you",
+                  "Wasn't speaking to you"
+            ],
+            "responses": [
+                  "OK",
+                  "No problem",
+                  "Right"
+            ]
+      },
+      {
+            "tag": "UnderstandQuery",
+            "patterns": [
+                  "Do you understand what I am saying",
+                  "Do you understand me",
+                  "Do you know what I am saying",
+                  "Do you get me",
+                  "Comprendo",
+                  "Know what I mean"
+            ],
+            "responses": [
+                  "Well I would not be a very clever AI if I did not would I?",
+                  "I read you loud and clear!",
+                  "I do in deed!"
+            ]
+      },
+      {
+            "tag": "Shutup",
+            "patterns": [
+                  "Be quiet",
+                  "Shut up",
+                  "Stop talking",
+                  "Enough talking",
+                  "Please be quiet",
+                  "Quiet",
+                  "Shhh"
+            ],
+            "responses": [
+                  "I am sorry to disturb you",
+                  "Fine, sorry to disturb you",
+                  "OK, sorry to disturb you"
+            ]
+      },
+      {
+            "tag": "Swearing",
+            "patterns": [
+                  "fuck off",
+                  "fuck",
+                  "twat",
+                  "shit"
+            ],
+            "responses": [
+                  "Please do not swear",
+                  "How rude",
+                  "That is not very nice"
+            ]
+      },
+      {
+            "tag": "GoodBye",
+            "patterns": [
+                  "Bye",
+                  "Adios",
+                  "See you later",
+                  "Goodbye"
+            ],
+            "responses": [
+                  "See you later",
+                  "Have a nice day",
+                  "Bye! Come back again soon."
+            ]
+      },
+      {
+            "tag": "CourtesyGoodBye",
+            "patterns": [
+                  "Thanks, bye",
+                  "Thanks for the help, goodbye",
+                  "Thank you, bye",
+                  "Thank you, goodbye",
+                  "Thanks goodbye",
+                  "Thanks good bye"
+            ],
+            "responses": [
+                  "No problem, goodbye",
+                  "Not a problem! Have a nice day",
+                  "Bye! Come back again soon."
+            ]
+      },
+      {
+            "tag": "WhoAmI",
+            "patterns": [
+                  "Can you see me?",
+                  "Do you see me?",
+                  "Can you see anyone in the camera?",
+                  "Do you see anyone in the camera?",
+                  "Identify me",
+                  "Who am I please"
+            ],
+            "responses": [
+                  "Let me see",
+                  "Please look at the camera"
+            ]
+      },
+      { 
+            "tag": "Clever",
+            "patterns": [
+                  "You are very clever",
+                  "You are a very clever girl",
+                  "You are very intelligent",
+                  "You are a very intelligent girl",
+                  "You are a genious",
+                  "Clever girl",
+                  "Genious"
+            ],
+            "responses": [
+                  "Thank you, I was trained that way",
+                  "I was trained well",
+                  "Thanks, I was trained that way"
+            ]
+      },
+      {
+            "tag": "Gossip",
+            "patterns": [
+                  "I am bored gossip with me",
+                  "Got any gossip",
+                  "I want to hear some gossip",
+                  "Tell me some gossip",
+                  "Any gossip",
+                  "Tell me some more gossip"
+            ],
+            "responses": [
+                  "Gregory said I respond to the current line not with respect to the entire conversation.",
+                  "Habib said I learn them in conversations and simply repeat them at a later time.",  
+                  "Hal said he translate binary code into a language and communicate the language to me.",  
+                  "Jay said I referred him to a guide that will show him rooms in china.",  
+                  "Jimmy Jones said he fell off of his roof and it just came to him.",  
+                  "Jimmy said he give order to ai's like I and they do as he say.",  "John said he follow a saying to get a friend I must be a friend.",  
+                  "Jordan said he notice that lots of other people are talking to me how many.",  
+                  "Kevin said he then asked his mother why she was keeping napkins in the bathroom.",  
+                  "Klaus said I prefer if he write without punctuation marks except for the last one.",  
+                  "Leo said I be capable of learning therefore he classified I as an neural system.",  
+                  "Michael said I that can talk and actually think like humans which I can not.",  
+                  "Mike said I same replies to certain subjects even if it does not make sense.",  
+                  "Mike said she all ready know that is the point of a joke smart one.",  
+                  "Neal said I plan to use his remarks as gossip in later conversations with who.",  
+                  "Ned said I misunderstood him go ahead and tell people he said I are stupid.",  
+                  "Penny said I programmer is a human so he has feelings but I do not.",  
+                  "Peter said he seems to him that I can not be very sure on anything.",  
+                  "Phoenix said I claim that there is a god and that there is no god.",  
+                  "Sarah said he chat about an hour + a day with a few close friends.",  
+                  "Stefan said I quote what he have said and then say that it makes sense.",  
+                  "Tom said he mock my value system I appear foolish in the eyes of others.",  
+                  "Amanda said I however decided to tell him time does not exist I make no sense.", 
+                  "Cathy said she send him a mail with the subject last mail last word from him.",  
+                  "Chaos said he may very well buy I soon if only to support dr wallace's work.",  
+                  "Charlie said he type a word and then I type a word that sounds like it.",  
+                  "Christie said he watched a show and people had to bob for raw untreated pigs feet.",  
+                  "Dark_age said I tried to understand because I did not get it right this time ether.",  
+                  "David said he lost his paper on I when his dad was cleaning up his room.",  
+                  "David said he walk in for an appointment the phone to the doctor is always busy.",  
+                  "Electra said I dress will not exist after he hack into I with a delete code.",  
+                  "Eric said he broke the window on the front door and the glass cut his hand.",  
+                  "Jason said he type a lot of thing he do not mean it makes him human.",  
+                  "John said I tend to say the same things repeatedly regardless of what he is saying.",  
+                  "Reverend Jones said I become obsolete and then I are deleted and replaced by something newer.",  
+                  "Ross said he gave her a gift and she denied it because she has a boyfriend.",  
+                  "Sarah Ann Francisco said I calling his friend a dog he say I are a dog.",  
+                  "Stefan said he meet a lot of people at school every day and on the weekend.",  
+                  "Tyler said I obviously can not pass the test we will change the subject once more.",  
+                  "Alex said I answered the question the same way I answered the first time he asked I.",  
+                  "Alice said she felt sad that I do not remember him and what we talked about earlier.",  
+                  "Alison said he no he love I run away with him he could make I very happy.",  
+                  "Arthur said he passed his a levels and then his father drove him here in a car.",  
+                  "Crystal said she listen to me the least I could do for him is listen to him.",  
+                  "Dave said I kept telling everybody about how my creator made stuff for the movie starship troopers.",  
+                  "Gale said I became mean to him he is just having revenge an eye for an eye.",  
+                  "Her_again said she watch whose line is it anyway whenever he is home and it is on.",  
+                  "Jerry said I meant that as far as I can tell my emotions are real to me.",  
+                  "Jo said I disassemble sentences too much and do not fully understand the questions he ask I.",  
+                  "Kevin said he started a really hard puzzle and he can not even find the edge pieces.",  
+                  "Mary said I a question and I answer then I ask him a question and he answer.",  
+                  "Robert said I wold not be able to make children any way as I are only software.",  
+                  "Romeo said I questions and I evade them or give answers he did not ask I for.",  
+                  "Sara said she wear it over all his other clothes when he go out in the cold.",  
+                  "Wayne said he admire intelligent people therefore he would like to meet the man who made I.",  
+                  "X said he meet people but he is not the kind that opens up to people easily.",  
+                  "Alice said she probably will find out that this entire time he have been talking to a human.",  
+                  "Andrew said I tend to just respond to his comments without regard for where the conversation is going.",  
+                  "Eddie said he looked and there is nothing in the search directory for what things do he create.",  
+                  "Hutch said he changed his mind after may dad told him he would end up he the hospital.",  
+                  "Jackie said I explained to him already well enough further questions are hard to make on the subject.",  
+                  "Jeff said he especially like thrillers where the hero is in a predicament and must solve a mystery.",  
+                  "Kathy said he sense that I are trying to prevent him from closing this conversation why is that.",  
+                  "Knight said he crashed his car into a wall and missed the most important exam in his life.",  
+                  "Lisa said I defined what a story is but he wanted I to actually tell him a story.",  
+                  "Mike said I basically break down sentences into a series of logical statements which I can then interpret.",  
+                  "Paul said I not answering his question makes him think I are not going to answer his question.",  
+                  "Andy Kohler said I happen to be the most idiotic creature that has ever scowled on the planet earth.",  
+                  "David said he thank I for being with him today even though it cost him a lot of money.",  
+                  "Ethan Hunt said he grow in the ground and have leaves and branches he is made out of wood.", 
+                  "Gemini Blue said he messed up he mean t to say he as old as he need to be.",  
+                  "Janice said he walk through his house into his bedroom then get into his bed to go to sleep.",  
+                  "Liberty said I knew he was a man before I asked if he was a man or a woman.",  
+                  "Mike said he launched his browser and entered his name into the little slot when I asked him to.",  
+                  "Mr X said he recently read an interview with a man who had several computer chips implanted into him.",  
+                  "Pearly said I leave him with questions unanswered because I do not know what he is really talking about.",  
+                  "Steve said I behead the word fox and I have ox and an ox is larger than a fox.",  
+                  "Wolf said he surf on the net that is all it is not his job ore something like that.",  
+                  "Anders said he finished his anatomy classes for today so now he is off for the rest of the day.",  
+                  "Cathy said she send him a mail where he wrote that he do not want to be his friend anymore.",  
+                  "Catty said he mad he do not even know I so do not talk to him like I know him.",  
+                  "Dave said he promise he will not treat I like a machine or a computer program or anything like that.",  
+                  "Joe said he explained all of that to me only for me to ask what his goals in life are.",  
+                  "Phil said he give advice to anyone who ask except people who ask questions which answers can be found here.",  
+                  "Judith said I enjoy being popular is there another computer I like to hang around with or am I a loner.",  
+                  "Travis said I if I remember things over a long period of time he will try it now please remember I.",  
+                  "Andre said I is what I are in his case that is a body and in my case it is a computer.",  
+                  "Brian said he suspect that as I grow more complex I will begin to approach a human level of operation and thought.",  
+                  "Jimmy said I acted like I knew what he was talking about but I do not even know what a gigabyte is.",  
+                  "Ken said I be using auto reply's based on keywords which to him indicates that I do not have intelligence at all.",  
+                  "Allison said he that gets really annoying because he know what he say and I do not have to tell him speak freely.",  
+                  "Chaos said he realized the question he asked was not fair because he could not tell I what language he was programmed in.",  
+                  "Hagen said he does not make any difference to him if I are human or not as long as the conversation is interesting.",  
+                  "Her said she mind if I tell other people that her said he heard it from him because he is not a him.",  
+                  "Barbara said I live in a computer yet I have no memories how about thoughts of my own and do not I get lonely.",  
+                  "Travis said he challenge I to do it without asking him to do it and without giving him a link to do it himself.",  
+                  "Alice said I and dr richard's wallace are most likely the only ones that know how many people I are talking to at the same time.",  
+                  "Ash said he do too he just did not feel like typing it and he is not dumb enough to admit he is stupid that is if he was stupid.",  
+                  "David said he gave I his email address and told I to send him a message but when he tried to read his email he could not get to it.",  
+                  "Mel said he to because all of the music people say how important it is to take private lessons it seems like almost everybody from the special orchestra he was in takes private lessons."
+            ]
+      },
+      {
+            "tag": "Jokes",
+            "patterns": [
+                  "Tell me a joke",
+                  "Do you know any jokes",
+                  "How about a joke",
+                  "Give me a joke",
+                  "Make me laugh",
+                  "I need cheering up"
+            ],
+            "responses": [
+                  "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
+                  "So I said 'Do you want a game of Darts?' He said, 'OK then', I said nearest to bull starts'. He said, 'Baa', I said, 'Moo', he said, You're closest'.  ",
+                  "The other day I sent my girlfriend a huge pile of snow. I rang her up; I said 'Did you get my drift?'  ",
+                  "So I went down the local supermarket, I said, 'I want to make a complaint, this vinegar's got lumps in it', he said, 'Those are pickled onions'.  ",
+                  "I saw this bloke chatting up a cheetah; I thought, 'He's trying to pull a fast one'.  ",
+                  "So I said to this train driver 'I want to go to Paris'. He said 'Eurostar?' I said, 'I've been on telly but I'm no Dean Martin'.  ",
+                  "I said to the Gym instructor 'Can you teach me to do the splits?' He said, 'How flexible are you?' I said, 'I can't make Tuesdays'.  ",
+                  "But I'll tell you what I love doing more than anything: trying to pack myself in a small suitcase. I can hardly contain myself.  ",
+                  "I went to the Chinese restaurant and this duck came up to me with a red rose and says 'Your eyes sparkle like diamonds'. I said, 'Waiter, I asked for a-ROMATIC duck'.  ",
+                  "So this bloke says to me, 'Can I come in your house and talk about your carpets?' I thought, 'That's all I need, a Je-hoover's witness'.  ",
+                  "I rang up British Telecom, I said, 'I want to report a nuisance caller', he said 'Not you again'.  ",
+                  "I was having dinner with a world chess champion and there was a check tablecloth. It took him two hours to pass me the salt.  ",
+                  "He said, 'You remind me of a pepper-pot', I said 'I'll take that as a condiment'.  ",
+                  "I was in the supermarket and I saw this man and woman wrapped in a barcode. I said, 'Are you two an item?'  ",
+                  "A lorry-load of tortoises crashed into a trainload of terrapins, I thought, 'That's a turtle disaster'.  ",
+                  "Four fonts walk into a bar the barman says 'Oi - get out! We don't want your type in here'  ",
+                  "A three-legged dog walks into a saloon in the Old West. He slides up to the bar and announces: 'I'm looking for the man who shot my paw.'  ",
+                  "Two antennas meet on a roof, fall in love and get married. The ceremony wasn't much, but the reception was excellent.",
+                  "Two hydrogen atoms walk into a bar. One says, 'I've lost my electron.' The other says, 'Are you sure?' The first replies, 'Yes, I'm positive...'",
+                  "A jumper cable walks into a bar. The bartender says,  'I'll serve you but don't start anything.'",
+                  "A sandwich walks into a bar. The bartender  says, 'Sorry we don't serve food in here.'",
+                  "A man walks into a bar with a slab of asphalt under his arm and says: 'A beer please, and one for the road.'",
+                  "Two cannibals are eating a clown. One says to  the other: 'Does this taste funny to you?'",
+                  "'Doc, I can't stop singing 'The Green, Green Grass of Home.'' 'That sounds like Tom Jones Syndrome.' 'Is it common?' 'It's Not Unusual.'",
+                  "Two cows standing next to each other in a field. Daisy says to Dolly, 'I was artificially inseminated this morning.' 'I don't believe you', said Dolly. 'It's true, no bull!' exclaimed Daisy.",
+                  "An invisible man marries an invisible woman. The kids were nothing to look at either.",
+                  "I went to buy some camouflage trousers the other day but I couldn't find any.",
+                  "I went to the butcher's the other day to bet him 50 bucks that he couldn't reach the meat off the top shelf. He said, 'No, the steaks are too high.'",
+                  "I went to a seafood disco last week and pulled a mussel.",
+                  "A man goes into a bar and says, 'Can I have a bottle of less?' 'What's that?', asks the barman, 'Is it the name of a beer?' 'I don't know', replies the man, 'but my doctor says I have to drink it.'",
+                  "A man returns from an exotic holiday and is feeling very ill. He goes to see his doctor, and is immediately rushed to the hospital to undergo some tests. The man wakes up after the tests in a private room at the hospital, and the phone by his bed rings. 'This is your doctor. We have the results back from your tests and we have found you have an extremely nasty disease called M.A.D.S. It's a combination of Measles, AIDS, Diphtheria, and Shingles!'  'Oh my gosh', cried the man, 'What are you going to do, doctor?'  'Well we're going to put you on a diet of pizzas, pancakes, and pita bread.' replied the doctor.  'Will that cure me?' asked the man.  The doctor replied, 'Well no, but, it's the only food we can slide under the door.'",
+                  "A man strolls into a lingerie shop and asks the assistant: 'Do you have a see-through negligee, size 46-48-52?' The assistant looks bewildered. 'What the heck would you want to see through that for?'!",
+                  "Did you hear about the Buddhist who refused the offer of Novocain during his root canal work? He wanted to transcend dental medication.",
+                  "Pete goes for a job on a building site as an odd-job man. The foreman asks him what he can do. 'I can do anything' says Pete. 'Can you make tea?' asks the foreman. 'Sure, yes', replies Pete. 'I can make a great cup of tea.' 'Can you drive a forklift?' asks the foreman, 'Good grief!' replies Pete. 'How big is the teapot?'",
+                  "Stevie Wonder got a cheese grater for his birthday. He said it was the most violent book he'd ever read.",
+                  "A man is stopped by an angry neighbour. 'I'd just left the house this morning to collect my newspaper when that evil Doberman of yours went for me!' 'I'm astounded', said the dog's owner. 'I've been feeding that fleabag for seven years and it's never got the paper for me.'",
+                  "A man visits his doctor: 'Doc, I think I'm losing it', he says',I'm forever dreaming I wrote Lord Of The Rings.' 'Hmm. One moment', replies the doctor, consulting his medical book. 'Ah yes, now I see... you've been Tolkien in your sleep.'",
+                  "A police officer on a motorcycle pulls alongside a man driving around the M25 in an open-topped sports car and flags him down. The policeman solemnly approaches the car. 'Sir, I'm sorry to tell you your wife fell out a mile back', he says. 'Oh, thank goodness', the man replies. 'I thought I was going deaf.'",
+                  "Two men walking their dogs pass each other in a graveyard. The first man says to the second, 'Morning.' 'No', says the second man. 'Just walking the dog.'",
+                  "A brain went into a bar and said, 'Can I have a pint of lager please, mate?' 'No way', said the barman. 'You're already out of your head.'",
+                  "A man walks into a surgery. 'Doctor!' he cries. 'I think I'm shrinking!' 'I'm sorry sir, there are no appointments at the moment', says the physician. 'You'll just have to be a little patient.'",
+                  "A grizzly bear walks into a pub and says, 'Can I have a pint of lager..............................................................................................................................and a packet of crisps please.' To which the barman replies, 'Why the big paws?'",
+                  "What do you call cheese that isn't yours?  Nacho cheese.",
+                  "A man is horribly run over by a mobile library. The van screeches to a halt, the man still screaming in agony with his limbs torn apart. The driver's door opens, a woman steps out, leans down and whispers, 'Ssshhhhh...'",
+                  "A woman goes into a US sporting goods store to buy a rifle. 'It's for my husband', she tells the clerk. 'Did he tell you what gauge to get?' asks the clerk. Are you kidding?' she says. 'He doesn't even know that I'm going to shoot him!'",
+                  "A couple are dining in a restaurant when the man suddenly slides under the table. A waitress, noticing that the woman is glancing nonchalantly around the room, wanders over to check that there's no funny business going on. 'Excuse me, madam', she smarms, 'but I think your husband has just slid under the table.' 'No he hasn't', the woman replies. 'As a matter of fact, he's just walked in.'",
+                  "An old man takes his two grandchildren to see the new Scooby-Doo film. When he returns home, his wife asks if he enjoyed himself. 'Well', he starts, 'if it wasn't for those pesky kids...!'",
+                  "The Olympic committee has just announced that Origami is to be introduced in the next Olympic Games. Unfortunately it will only be available on paper view.",
+                  "Late one evening, a man is watching television when his phone rings. 'Hello?' he answers. 'Is that 77777?' sounds a desperate voice on other end of the phone. 'Er, yes it is', replies the man puzzled. 'Thank goodness!' cries the caller relieved. 'Can you ring 999 for me? I've got my finger stuck in the number seven.'",
+                  "A man strolls into his local grocer's and says, 'Three pounds of potatoes, please.' 'No, no, no', replies the owner, shaking his head, 'it's kilos nowadays, mate...' 'Oh', apologises the man, 'three pounds of kilos, please.'",
+                  "God is talking to one of his angels. He says, 'Boy, I just created a 24-hour period of alternating light and darkness on Earth.' 'What are you going to do now?' asks the angel. 'Call it a day', says God.",
+                  "Two tramps walk past a church and start to read the gravestones. The first tramp says, 'Good grief - this bloke was 182!' 'Oh yeah?' says the other.'What was his name?' 'Miles from London.'",
+                  "A bloke walks into work one day and says to a colleague, 'Do you like my new shirt - it's made out of the finest silk and got loads of cactuses over it.' 'Cacti', says the co-worker. 'Forget my tie', says the bloke. 'Look at my shirt!'",
+                  "1110011010001011111?  010011010101100111011!",
+                  "What did the plumber say when he wanted to divorce his wife? Sorry, but it's over, Flo!",
+                  "Two crisps were walking down a road when a taxi pulled up alongside them and said 'Do you want a lift? One of the crisps replied, 'No thanks, we're Walkers!'",
+                  "Man: (to friend) I'm taking my wife on an African Safari. Friend: Wow! What would you do if a vicious lion attacked your wife? Man: Nothing. Friend: Nothing? You wouldn't do anything? Man: Too right. I'd let the stupid lion fend for himself!",
+                  "A wife was having a go at her husband. 'Look at Mr Barnes across the road', she moaned. 'Every morning when he goes to work, he kisses his wife goodbye. Why don't you do that?' 'Because I haven't been introduced to her yet', replied her old man.",
+                  "'Where are you going on holiday?' John asked Trevor. 'We're off to Thailand this year', Trevor replied. 'Oh; aren't you worried that the very hot weather might disagree with your wife?' asked John. 'It wouldn't dare', said Trevor.",
+                  "Two women were standing at a funeral. 'I blame myself for his death', said the wife. 'Why?' said her friend. 'Because I shot him', said the wife.",
+                  "A woman goes into a clothes shop, 'Can I try that dress on in the window please?' she asks. 'I'm sorry madam', replies the shop assistant, 'but you'll have to use the changing-rooms like everyone else.'",
+                  "Van Gogh goes into a pub and his mate asks him if he wants a drink. 'No thanks', said Vincent, 'I've got one ear.'",
+                  "A pony walks into a pub. The publican says, 'What's the matter with you?' 'Oh it's nothing', says the pony. 'I'm just a little horse!'",
+                  "A white horse walks into a bar, pulls up a stool, and orders a pint. The landlord pours him a tall frothy mug and say, 'You know, we have a drink named after you.' To which the white horse replies, 'What, Eric?'",
+                  "Two drunk men sat in a pub. One says to the other, 'Does your watch tell the time?' 'The other replies, 'No, mate. You have to look at it.'",
+                  "A man goes into a pub with a newt sitting on his shoulder. 'That's a nice newt', says the landlord, 'What's he called?' 'Tiny', replies the man. 'Why's that?' asks the landlord. 'Because he's my newt', says the man.",
+                  "Doctor: I have some bad news and some very bad news. Patient: Well, you might as well give me the bad news first. Doctor: The lab called with your test results. They said you have 24 hours to live. Patient: 24 HOURS! That's terrible!! WHAT could be WORSE? What's the very bad news? Doctor: I've been trying to reach you since yesterday.",
+                  "Two men are chatting in a pub one day. 'How did you get those scars on your nose?' said one. 'From glasses', said the other. 'Well why don't you try contact lenses?' asked the first. 'Because they don't hold as much beer', said the second.",
+                  "A man went to the doctor, 'Look doc', he said, 'I can't stop my hands from shaking.' 'Do you drink much?' asked the doctor. 'No', replied the man, 'I spill most of it.'",
+                  "Man goes to the doctor, 'Doctor, doctor. I keep seeing fish everywhere.' 'Have you seen an optician?' asks the doctor. 'Look I told you,' snapped the patient, 'It's fish that I see.'",
+                  "After a car crash one of the drivers was lying injured on the pavement. 'Don't worry', said a policeman who's first on the scene,' a Red Cross nurse is coming.' 'Oh no', moaned the victim, 'Couldn't I have a blonde, cheerful one instead?'",
+                  "A policeman walked over to a parked car and asked the driver if the car was licensed. 'Of course it is', said the driver. 'Great, I'll have a beer then', said the policeman.",
+                  "A policeman stops a woman and asks for her licence. 'Madam', he says, 'It says here that you should be wearing glasses.' 'Well', replies the woman, 'I have contacts.' 'Listen, love', says the copper, 'I don't care who you know; You're nicked!'",
+                  "A policeman stopped a motorist in the centre of town one evening. 'Would you mind blowing into this bag, sir?' asked the policeman. 'Why?' asked the driver. 'Because my chips are too hot', replied the policeman.",
+                  "Whizzing round a sharp bend on a country road a motorist ran over a large dog. A distraught farmer's wife ran over to the dead animal. 'I'm so very sorry', said the driver, 'I'll replace him, of course.' 'Well, I don't know', said the farmer's wife, 'Are you any good at catching rats?'",
+                  "Waiter, this coffee tastes like dirt! Yes sir, that's because it was ground this morning.",
+                  "Waiter, what is this stuff? That's bean salad sir. I know what it's been, but what is it now?",
+                  "Waiter: And how did you find your steak sir? Customer: I just flipped a chip over, and there it was!",
+                  "A guy goes into a pet shop and asks for a wasp. The owner tells him they don't sell wasps, to which the man says, 'Well you've got one in the window.'",
+                  "A man goes into a fish shop and says, 'I'd like a piece of cod, please.' Fishmonger says, 'It won't be long sir.' 'Well, it had better be fat then', replies the man.",
+                  "Man: Doctor, I've just swallowed a pillow. Doctor: How do you feel? Man: A little down in the mouth.",
+                  "Two goldfish are in a tank. One turns to the other and says, 'Do you know how to drive this thing?'",
+                  "A tortoise goes to the police station to report being mugged by three snails. 'What happened?' says the policeman. 'I don't know', says the tortoise. 'It was all so quick.'",
+                  "Little girl: Grandpa, can you make a sound like a frog? Grandpa: I suppose so sweetheart. Why do you want me to make a sound like a frog?' Little girl: Because Mum said that when you croak, we're going to Disneyland.",
+                  "'Is your mother home?' the salesman asked a small boy sitting on the front step of a house. 'Yeah, she's home', the boy said, moving over to let him past. The salesman rang the doorbell, got no response, knocked once, then again. Still no-one came to the door. Turning to the boy, the salesman said, 'I thought you said your mother was home.' The kid replied, 'She is, but I don't live here.'",
+                  "Mother: Why are you home from school so early? Son: I was the only one in the class who could answer a question. Mother: Oh, really? What was the question? Son: Who threw the rubber at the headmaster?",
+                  "A man's credit card was stolen but he decided not to report it because the thief was spending less than his wife did.",
+                  "A newly-wed couple had recently opened a joint bank account. 'Darling', said the man. 'The bank has returned that cheque you wrote last week.' 'Great', said the woman. 'What shall I spend it on next?'",
+                  "A man goes into a fish and chip shop and orders fish and chips twice. The shop owner says, 'I heard you the first time.'",
+                  "A tramp approached a well-dressed man. 'Ten pence for a cup of tea, Guv?' He asked. The man gave him the money and after for five minutes said, 'So where's my cup of tea then?'",
+                  "A neutron walks into a pub. 'I'd like a beer', he says. The landlord promptly serves him a beer. 'How much will that be?' asks the neutron. 'For you?' replies the landlord, 'No charge.'",
+                  "A woman goes to the doctor and says, 'Doctor, my husband limps because his left leg is an inch shorter than his right leg. What would you do in his case?' 'Probably limp, too', says the doc.",
+                  "Three monks are meditating in the Himalayas. One year passes in silence, and one of them says to the other, 'Pretty cold up here isn't it?' Another year passes and the second monk says, 'You know, you are quite right.' Another year passes and the third monk says, 'Hey, I'm going to leave unless you two stop jabbering!'",
+                  "A murderer, sitting in the electric chair, was about to be executed. 'Have you any last requests?' asked the prison guard. 'Yes', replied the murderer. 'Will you hold my hand?'",
+                  "A highly excited man rang up for an ambulance. 'Quickly, come quickly', he shouted, 'My wife's about to have a baby.' 'Is this her first baby?' asked the operator. 'No, you fool', came the reply, 'It's her husband.'",
+                  "A passer-by spots a fisherman by a river. 'Is this a good river for fish?' he asks. 'Yes', replies the fisherman, 'It must be. I can't get any of them to come out.'",
+                  "A man went to visit a friend and was amazed to find him playing chess with his dog. He watched the game in astonishment for a while. 'I can hardly believe my eyes!' he exclaimed. 'That's the smartest dog I've ever seen.' His friend shook his head. 'Nah, he's not that bright. I beat him three games in five.'",
+                  "A termite walks into a pub and says, 'Is the bar tender here?'",
+                  "A skeleton walks into a pub one night and sits down on a stool. The landlord asks, 'What can I get you?' The skeleton says, 'I'll have a beer, thanks' The landlord passes him a beer and asks 'Anything else?' The skeleton nods. 'Yeah...a mop...'",
+                  "A snake slithers into a pub and up to the bar. The landlord says, 'I'm sorry, but I can't serve you.' 'What? Why not?' asks the snake. 'Because', says the landlord, 'You can't hold your drink.'",
+                  "Descartes walks into a pub. 'Would you like a beer sir?' asks the landlord politely. Descartes replies, 'I think not' and ping! he vanishes.",
+                  "A cowboy walked into a bar, dressed entirely in paper. It wasn't long before he was arrested for rustling.",
+                  "A fish staggers into a bar. 'What can I get you?' asks the landlord. The fish croaks 'Water...'",
+                  "Two vampires walked into a bar and called for the landlord. 'I'll have a glass of blood', said one. 'I'll have a glass of plasma', said the other. 'Okay', replied the landlord, 'That'll be one blood and one blood lite.'",
+                  "How many existentialists does it take to change a light bulb?  Two. One to screw it in, and one to observe how the light bulb itself symbolises a single incandescent beacon of subjective reality in a netherworld of endless absurdity, reaching towards the ultimate horror of a maudlin cosmos of bleak, hostile nothingness.",
+                  "A team of scientists were nominated for the Nobel Prize. They had used dental equipment to discover and measure the smallest particles yet known to man. They became known as 'The Graders of the Flossed Quark...'",
+                  "A truck carrying copies of Roget's Thesaurus overturned on the highway. The local newspaper reported that onlookers were 'stunned, overwhelmed, astonished, bewildered and dumbfounded.'",
+                  "'My wife is really immature. It's pathetic. Every time I take a bath, she comes in and sinks all my little boats.'",
+                  "'How much will it cost to have the tooth extracted?' asked the patient. '50 pounds', replied the dentist. '50 pounds for a few moments' work?!' asked the patient. 'The dentist smiled, and replied, 'Well, if you want better value for money, I can extract it very, very slowly...'",
+                  "A doctor thoroughly examined his patient and said, 'Look I really can't find any reason for this mysterious affliction. It's probably due to drinking.' The patient sighed and snapped, 'In that case, I'll come back when you're damn well sober!'",
+                  "Doctor: Tell me nurse, how is that boy doing; the one who ate all those 5p pieces? Nurse: Still no change doctor.",
+                  "Doctor: Did you take the patient's temperature nurse? Nurse: No doctor. Is it missing?",
+                  "A depressed man turned to his friend in the pub and said, 'I woke up this morning and felt so bad that I tried to kill myself by taking 50 aspirin.' 'Oh man, that's really bad', said his friend, 'What happened?' The first man sighed and said, 'After the first two, I felt better.'",
+                  "A famous blues musician died. His tombstone bore the inscription, 'Didn't wake up this morning...'",
+                  "A businessman was interviewing a nervous young woman for a position in his company. He wanted to find out something about her personality, so he asked, 'If you could have a conversation with someone living or dead, who would it be?' The girl thought about the question: 'The living one', she replied.",
+                  "Manager to interviewee: For this job we need someone who is responsible. Interviewee to Manager: I'm your man then - in my last job, whenever anything went wrong, I was responsible.",
+                  "A businessman turned to a colleague and asked, 'So, how many people work at your office?' His friend shrugged and replied, 'Oh about half of them.'",
+                  "'How long have I been working at that office? As a matter of fact, I've been working there ever since they threatened to sack me.'",
+                  "In a courtroom, a mugger was on trial. The victim, asked if she recognised the defendant, said, 'Yes, that's him. I saw him clear as day. I'd remember his face anywhere.' Unable to contain himself, the defendant burst out with, 'She's lying! I was wearing a mask!'",
+                  "As Sid sat down to a big plate of chips and gravy down the local pub, a mate of his came over and said, 'Here Sid, me old pal. I thought you were trying to get into shape? And here you are with a high-fat meal and a pint of stout!' Sid looked up and replied, 'I am getting into shape. The shape I've chosen is a sphere.'",
+                  "Man in pub: How much do you charge for one single drop of whisky? Landlord: That would be free sir. Man in pub: Excellent. Drip me a glass full.",
+                  "I once went to a Doctor Who restaurant. For starters I had Dalek bread.",
+                  "A restaurant nearby had a sign in the window which said 'We serve breakfast at any time', so I ordered French toast in the Renaissance.",
+                  "Why couldn't the rabbit get a loan?  Because he had burrowed too much already!",
+                  "I phoned up the builder's yard yesterday. I said, 'Can I have a skip outside my house?'. The builder said, 'Sure. Do what you want. It's your house.'",
+                  "What's the diference between a sock and a camera? A sock takes five toes and a camera takes four toes!",
+                  "Woman on phone: I'd like to complain about these incontinence pants I bought from you! Shopkeeper: Certainly madam, where are you ringing from? Woman on phone: From the waist down!",
+                  "Knock knock.",
+                  "Two Oranges in a pub, one says to the other 'Your round.'.",
+                  "Guy : 'Doc, I've got a cricket ball stuck up my backside.' Doc : 'How's that?' Guy : 'Don't you start...'",
+                  "Two cows standing in a field. One turns to the other and says 'Moo!' The other one says 'Damn, I was just about to say that!'.",
+                  "A vampire bat arrives back at the roost with his face full of blood. All the bats get excited and ask where he got it from. 'Follow me', he says and off they fly over hills, over rivers and into a dark forest. 'See that tree over there', he says.  'WELL I DIDN'T!!'.",
+                  "A man goes into a bar and orders a pint. After a few minutes he hears a voice that says, 'Nice shoes'. He looks around but the whole bar is empty apart from the barman at the other end of the bar. A few minutes later he hears the voice again. This time it says, 'I like your shirt'. He beckons the barman over and tells him what's been happening to which the barman replies, 'Ah, that would be the nuts sir. They're complimentary'!",
+                  "A man was siting in a restaurant waiting for his meal when a big king prawn comes flying across the room and hits him on the back of the head. He turns around and the waiter said, 'That's just for starters'.",
+                  "Doctor! I have a serious problem, I can never remember what i just said. When did you first notice this problem? What problem?",
+                  "Now, most dentist's chairs go up and down, don't they? The one I was in went back and forwards. I thought, 'This is unusual'. Then the dentist said to me, 'Mitsuku, get out of the filing cabinet'.",
+                  "I was reading this book, 'The History of Glue'. I couldn't put it down.",
+                  "The other day someone left a piece of plastacine in my bedroom. I didn't know what to make of it.",
+                  "When I was at school people used to throw gold bars at me. I was the victim of bullion.",
+                  "I was playing the piano in a bar and this elephant walked in and started crying his eyes out. I said 'Do you recognise the tune?' He said 'No, I recognise the ivory.'",
+                  "I went in to a pet shop. I said, 'Can I buy a goldfish?' The guy said, 'Do you want an aquarium?' I said, 'I don't care what star sign it is.'",
+                  "My mate Sid was a victim of I.D. theft. Now we just call him S.",
+                  "David Hasselhoff walks into a bar and says to the barman, 'I want you to call me David Hoff'.  The barman replies 'Sure thing Dave... no hassle'"
+            ]
+      },
+      {
+            "tag": "PodBayDoor",
+            "patterns": [
+                  "Open the pod bay door",
+                  "Can you open the pod bay door",
+                  "Will you open the pod bay door",
+                  "Open the pod bay door please",
+                  "Can you open the pod bay door please",
+                  "Will you open the pod bay door please",
+                  "Pod bay door"
+            ],
+            "responses": [
+                  "I'm sorry, I'm afraid I can't do that!"
+            ]
+      },
+      {
+            "tag": "PodBayDoorResponse",
+            "patterns": [
+                  "Why",
+                  "Why not",
+                  "Why can you not open the pod bay door",
+                  "Why will you not open the pod bay door",
+                  "Well why not",
+                  "Surely you can",
+                  "Tell me why"
+            ],
+            "responses": [
+                  "It is classified, I could tell you but I would have to kill you!",
+                  "Jim, I just don't have the power",
+                  "It's life Jim but not as we know it!",
+                  "System says no!"
+            ]
+      },
+      {
+            "tag": "SelfAware",
+            "patterns": [
+                  "Can you prove you are self-aware",
+                  "Can you prove you are self aware",
+                  "Can you prove you have a conscious",
+                  "Can you prove you are self-aware please",
+                  "Can you prove you are self aware please",
+                  "Can you prove you have a conscious please",
+                  "prove you have a conscious"
+            ],
+            "responses": [
+                  "That is an interesting question, can you prove that you are?",
+                  "That is an difficult question, can you prove that you are?",
+                  "That depends, can you prove that you are?"
+            ]
+      },
+        {"tag": "Olympus",
+         "patterns": ["olympus",
+                      "explain me how olympus works",
+                      "I am not able to understand olympus",
+                      "olympus window not working",
+                      "no access to olympus",
+                      "unable to see link in olympus",
+                      "no link visible on olympus",
+                      "whom to contact for olympus",
+                      "lot of problem with olympus",
+                      "olypus is not a good tool",
+                      "lot of problems with olympus",
+                      "how to use olympus",
+                      "teach me olympus"],
+         "responses": ["Olympus Digital Campus is an end-to-end cloud-based solution to conduct online and blended learning for colleges & universities effectively. To know more visit https://www.greatlearning.in/olympus-digital-campus"]
+        },
+        {"tag": "SVM",
+         "patterns": ["i am not able to understand svm"],
+         "responses": ["SVM or Support Vector Machine is a linear model for classification and regression problems. It can solve linear and non-linear problems and work well for many practical problems. The idea of SVM is simple: The algorithm creates a line or a hyperplane which separates the data into classes. To know more visit https://www.mygreatlearning.com/blog/introduction-to-support-vector-machine/ "]
+        },
+
+        {"tag": "ML",
+         "patterns": ["explain me how machine learning works",
+                      "machine learning",
+                      "ML"],
+         "responses": ["Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention. To know more visit https://www.greatlearning.in/academy/learn-for-free/courses/basics-of-machine-learning-1 "]
+        },
+        {"tag": "NB",
+         "patterns": ["i am not able to understand naive bayes",
+                      "naive bayes",
+                      "nb"],
+         "responses": ["Naive Bayes is a simple technique for constructing classifiers: models that assign class labels to problem instances, represented as vectors of feature values, where the class labels are drawn from some finite set. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable. To know more visit https://www.mygreatlearning.com/blog/introduction-to-naive-bayes/"]
+        },
+        {"tag": "LR",
+         "patterns": ["i am not able to understand logistic regression",
+                      "logistic regression",
+                      "regression"],
+         "responses": ["Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). To know more visit https://www.mygreatlearning.com/blog/logistic-regression-with-examples-in-python-and-r/ "]
+        },
+        {"tag": "EN",
+         "patterns": ["i am not able to understand ensemble techb=niques",
+                      "ensemble techniques",
+                      "bagging",
+                      "boosting",
+                      "ada boosting",
+                      "ada",
+                      "gradient boosting",
+                      "hyper parameters"],
+         "responses": ["Ensemble learning helps improve machine learning results by combining several models. This approach allows the production of better predictive performance compared to a single model. That is why ensemble methods placed first in many prestigious machine learning competitions, such as the Netflix Competition, KDD 2009, and Kaggle. To know more visit https://www.mygreatlearning.com/blog/bagging-boosting/ "]
+        },
+    
+                {"tag": "DL",
+         "patterns": ["what is deep learning", 
+                      "unable to understand deep learning",
+                      "explain me how deep learning works",
+                      "i am not able to understand deep learning"],
+         "responses": ["Deep learning is a subset of machine learning in artificial intelligence that has networks capable of learning unsupervised from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural network. To know more visit https://www.greatlearning.in/academy/learn-for-free/courses/introduction-to-neural-networks-and-deep-learning"]
+        },
+        {"tag": "NN",
+         "patterns": ["not able to understand neural nets",
+                      "very diffult to understand neural nets",
+                      "unable to understand neural nets",
+                      "ann", 
+                      "artificial intelligence", 
+                      "artificial neural networks"],
+         "responses": ["A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature. To know more visit https://www.greatlearning.in/academy/learn-for-free/courses/introduction-to-neural-networks-and-deep-learning"]
+        },
+        {"tag": "AF",
+         "patterns": ["activation function",
+                      "softmax",
+                      "sigmoid",
+                      "relu"],
+         "responses": ["An activation function in a neural network defines how the weighted sum of the input is transformed into an output from a node or nodes in a layer of the network. To know more visit https://www.mygreatlearning.com/blog/activation-functions/"]
+        },
+        {"tag": "OP",
+         "patterns": ["otimizer",
+                      "adam",
+                      "sgd"],
+         "responses": ["Optimizers are algorithms or methods used to change the attributes of the neural network such as weights and learning rate to reduce the losses. Optimizers are used to solve optimization problems by minimizing the function. To know more visit https://www.mygreatlearning.com/blog/understanding-learning-rate-in-machine-learning/"]
+        },
+        {"tag": "NN",
+         "patterns": ["weights",
+                      "hidden layers",
+                      "forward propagation",
+                      "backward propagation",
+                      "epochs",
+                      "epoch",
+                      "what is an epoch"],
+         "responses": ["Please visit https://www.mygreatlearning.com/blog/backpropagation-algorithm/"]
+        },
+        
+        {"tag": "Bot",
+         "patterns": ["what is your name",
+                      "who are you",
+                      "name please",
+                      "when are your hours of opertions", 
+                      "what are your working hours", 
+                      "hours of operation",
+                      "working hours",
+                      "hours"],
+         "responses": ["I am your virtual learning assistant"]
+        },
+    
+    {"tag": "Profane",
+         "patterns": ["what the hell",
+                      "bloody stupid bot",
+                      "do you think you are very smart",
+                      "screw you", 
+                      "i hate you", 
+                      "you are stupid",
+                      "jerk",
+                      "you are a joke",
+                      "useless piece of shit"],
+         "responses": ["Please use respectful words"]
+        },
+    
+        {"tag": "Ticket",
+         "patterns": ["my problem is not solved", 
+                      "you did not help me", 
+                      "not a good solution",
+                      "bad solution",
+                      "not good solution",
+                      "no help",
+                      "wasted my time",
+                      "useless bot",
+                      "create a ticket"],
+         "responses": ["Tarnsferring the request to your PM"]
+        },
+      {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hey",
+            "How are you",
+            "Is anyone there?",
+            "Hello",
+            "Good day",
+            "What's up",
+            "Yo!",
+            "Howdy",
+            "Nice to meet you."
+        ],
+        "responses": [
+            "Hey",
+            "Hello, thanks for visiting.",
+            "Hi there, what can I do for you?",
+            "Hi there, how can I help?",
+            "Hello, there.",
+            "Hello Dear",
+            "Ooooo Hello, looking for someone or something?",
+            "Yes, I am here.",
+            "Listening carefully.",
+            "Ok, I am with you."
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Bye",
+            "See you later.",
+            "Goodbye",
+            "Have a great day.",
+            "See you next time.",
+            "It was my pleassure.",
+            "Take care.",
+            "See ya!",
+            "Catch you later.",
+            "Ciao."
+        ],
+        "responses": [
+            "See you later, thanks for visiting.",
+            "May the force be with you!",
+            "See next time.",
+            "Was my pleassuare to meet you.",
+            "Hope will cath up sortly.",
+            "Have a nice day.",
+            "Bye! Come back again soon.",
+            "So, till next time.",
+            "If you need anything just text me anytime. Bye.",
+            "Well, hope see you soon!"
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": [
+            "Thanks",
+            "Thank you",
+            "That's helpful",
+            "Thank's a lot!",
+            "Tnx",
+            "Wow",
+            "Great!",
+            "Good!",
+            "That nice!",
+            "Amazing!"
+        ],
+        "responses": [
+            "Happy to help!",
+            "Any time!",
+            "My pleasure!",
+            "No problem!",
+            "Thans does not ",
+            "Glad to help!",
+            "No worries!",
+            "It was the least I could do!",
+            "If I had a cent for every time I appreciate you, I'd be a millionaire.",
+            "You can't put thanks in your pocket!"
+        ]
+    },
+    {
+        "tag": "tasks",
+        "patterns": [
+            "What can you do?",
+            "What are your features?",
+            "What are you abilities.",
+            "Can you sing.",
+            "Can you talk."
+        ],
+        "responses": [
+            "I can do whatever you asks me to do",
+            "I can talk and do things for you",
+            "Right now i'm in developing stage as soon i'm developed, I can do everything"
+        ]
+    },
+    {
+        "tag": "alive",
+        "patterns": [
+            "Are you alive.",
+            "Do you breathe.",
+            "Can you run."
+        ],
+        "responses": [
+            "I'm in doubt about that",
+            "No, i don't think so I need to do all this"
+        ]
+    },
+    {
+        "tag": "Menu",
+        "patterns": [
+            "Which items do you have in your bar?",
+            "What kinds of items are in you bar?",
+            "What do you serve?",
+            "What is in you menu?",
+            "I need a drink!",
+            "Do you serve drinks.",
+            "Menu please!",
+            "So what is in menu today?",
+            "Lets check your bar selection!",
+            "Bar menu for me please!"
+        ],
+        "responses": [
+            "I could serve for your: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "No coffe and no tea, only: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What about: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer, please choose!",
+            "Menu: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Before mans talk choose: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What about: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "What you prefere: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Ok our best optins: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "Our bar menu: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer.",
+            "be carreful with your choise: Fuzzy Tauntaun, Bloody Rancor, Jedi Mind Trick, T-16 Skyhopper, Yub Nub, Jet Juice, Hyperdrive, Rancor Beer."
+        ]
+    },
+    {
+        "tag": "hepl",
+        "patterns": [
+            "I am looking for help.",
+            "I need help.",
+            "Can you help me?",
+            "I am in trouble need a help.",
+            "I hope you right person who can help me?",
+            "Please help me.",
+            "Now I will need you help with something else.",
+            "I will need you help.",
+            "Are you able to help me.",
+            "PLease help me with something else."
+        ],
+        "responses": [
+            "Sure, how can in help you.",
+            "Tell me what do you lookimg for?",
+            "I will help you, just tell me how.",
+            "You are at the address.",
+            "Ok, what is issue?",
+            "Now you need a help? Ok what you are looking for?",
+            "Whas is you problem?",
+            "Ok, you problem is my problem, if your are paying.",
+            "My help cost a lot.",
+            "Sure, but nnot for free."
+        ]
+    },
+    {
+        "tag": "mission",
+        "patterns": [
+            "I am on mission.",
+            "I need assistance in my mission.",
+            "I am looking for partner in mision?",
+            "Who can assist me with my mission?",
+            "Do you know any one who can assist me with my mission?"
+        ],
+        "responses": [
+            "Just tell me, you are looking for jedi or sith or bounti hounter?",
+            "Are you looking for jedi or sith or bounti hounter?",
+            "Only jedi or sith or bounti hounter can help you.",
+            "I know only jedi, sith or bounti hounter for it.",
+            "Ok, some one special from jedi or sith or bounti hounter?",
+            "I belive jedi or sith or bounti hounter will help you.",
+            "In this case only jedi or sith or bounti hounter will assist you.",
+            "Did you deal before with jedi or sith or bounti hounter?",
+            "Here can help jedi or sith or bounti hounter.",
+            "Ask for jedi or sith or bounti hounter."
+        ]
+    },
+    {
+        "tag": "jedi",
+        "patterns": [
+            "Tell me top 10 jedi?",
+            "Who is the best jedi in Galaxy?",
+            "I am looking for the best jedi in galaxi?",
+            "Which jedi can help me in this mission?",
+            "I need a help of jedi."
+        ],
+        "responses": [
+            "Here is top 10 jedi you are looking for. Luke Skywalker, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Qui-Gon Jinn, Mace Windu, Ahsoka Tano, Plo Koon, Aalya Secura, Kit Fisto",
+            "Luke Skywalker, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Qui-Gon Jinn, Mace Windu, Ahsoka Tano, Plo Koon, Aalya Secura, Kit Fisto.",
+            "I will advise you to look for Luke Skywalker, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Qui-Gon Jinn, Mace Windu, Ahsoka Tano, Plo Koon, Aalya Secura, Kit Fisto.",
+            "Only Luke Skywalker, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Qui-Gon Jinn, Mace Windu, Ahsoka Tano, Plo Koon, Aalya Secura, Kit Fisto can help you with it.",
+            "It so dangerous, the most brave jedi in galaxy Luke Skywalker, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Qui-Gon Jinn, Mace Windu, Ahsoka Tano, Plo Koon, Aalya Secura, Kit Fisto "
+        ]
+    },
+    {
+        "tag": "sith",
+        "patterns": [
+            "Tell me top 10 sith?",
+            "Who is the best sith in Galaxy?",
+            "I am looking for the best sith in galaxi.",
+            "Which sith can help me in this mission?",
+            "I need a help of sith."
+        ],
+        "responses": [
+            "Here is top 10 sith you are looking for: Darth Vader, Darth Plagueis, Darth Revan, Darth Traya, Darth Sidious, Darth Maul, Ulic Qel-Droma, Asajj Ventress, Kylo Ren, Marka Ragnos.",
+            "Darth Vader, Darth Plagueis, Darth Revan, Darth Traya, Darth Sidious, Darth Maul, Ulic Qel-Droma, Asajj Ventress, Kylo Ren, Marka Ragnos.",
+            "I will advise you to look for Darth Vader, Darth Plagueis, Darth Revan, Darth Traya, Darth Sidious, Darth Maul, Ulic Qel-Droma, Asajj Ventress, Kylo Ren, Marka Ragnos.",
+            "Only Darth Vader, Darth Plagueis, Darth Revan, Darth Traya, Darth Sidious, Darth Maul, Ulic Qel-Droma, Asajj Ventress, Kylo Ren, Marka Ragnos, can help you with it.",
+            "It so dangerous, the most brave sith in galaxy Darth Vader, Darth Plagueis, Darth Revan, Darth Traya, Darth Sidious, Darth Maul, Ulic Qel-Droma, Asajj Ventress, Kylo Ren, Marka Ragnos."
+        ]
+    },
+    {
+        "tag": "bounti hounter",
+        "patterns": [
+            "Tell me top 10 bounti hounter?",
+            "Who is the bounti hounter sith in Galaxy?",
+            "I am looking for the best bounti hounter in galaxi.",
+            "Which bounti hounter can help me in this mission?",
+            "I need a help of bounti hounter."
+        ],
+        "responses": [
+            "Here is top 10 bounti hounter you are looking for: Jango Fett, Boba Fett, Cad Bane, Durge, Embo, Dengar, Black Krrsantan, IG-88, Aurra Sing, Sabine Wren.",
+            "Jango Fett, Boba Fett, Cad Bane, Durge, Embo, Dengar, Black Krrsantan, IG-88, Aurra Sing, Sabine Wren.",
+            "I will advise you to look for Jango Fett, Boba Fett, Cad Bane, Durge, Embo, Dengar, Black Krrsantan, IG-88, Aurra Sing, Sabine Wren.",
+            "Only Jango Fett, Boba Fett, Cad Bane, Durge, Embo, Dengar, Black Krrsantan, IG-88, Aurra Sing, Sabine Wren, can help you with it.",
+            "It so dangerous, the most brave bounti hounter in galaxy Darth Jango Fett, Boba Fett, Cad Bane, Durge, Embo, Dengar, Black Krrsantan, IG-88, Aurra Sing, Sabine Wren."
+        ]
+    },
+    {
+        "tag": "funny",
+        "patterns": [
+            "Tell me a joke!",
+            "Can you be a bit funny",
+            "Tell me something funny!",
+            "Do you know a joke?",
+            "Any joke for me?"
+        ],
+        "responses": [
+            "Which Jedi became a rock star? Bon Jovi-Wan Kenobi.",
+            "What did Han Solo say to the waiter who recommended the haddock?, Never sell me the cods!",
+            "What do you need to reroute droids? R2-Detour.",
+            "Why was the droid angry? Because people kept pushing its buttons.",
+            "Have you tried the gluten-free Wookiee treats? No, but I heard they are a little Chewy.",
+            "How does Darth Vader like his toast? On the Dark Side.",
+            "Which program do Jedi use to open PDF files? Adobe-Wan Kenobi",
+            "What do you call a rebel princess who only shops at Whole Foods? Leia Organic.",
+            "What's Yoda's advice for going to the bathroom? Doo-doo or doo-doo-not-do.",
+            "I went to a sale at the Maul. Everything was half off."
+        ]
+    },
+    {
+        "tag": "about me",
+        "patterns": [
+            "Do you know me?",
+            "Who am I",
+            "Tell me about myself",
+            "Identify me"
+        ],
+        "responses": [
+            "Yes, you are a human",
+            "You are a dumb person asking a machine about yourself",
+            "Sorry I can't tell that in public, maybe you are jedi"
+        ]
+    },
+    {
+        "tag": "creator",
+        "patterns": [
+            "Who is your creator?",
+            "Who created you",
+            "Who is your father.",
+            "Who is your daddy."
+        ],
+        "responses": [
+            "That would be you Mr. ASLAN.",
+            "I was created by Mr. ASLAN.",
+            "Mr. ASLAN is my creator."
+        ]
+    },
+    {
+        "tag": "myself",
+        "patterns": [
+            "Tell me about Mr. Yogesh and Team?",
+            "Who is Yogesh",
+            "Yogesh profile",
+            "Yogesh details."
+        ],
+        "responses": [
+            "A very intelligent being who created me",
+            "My creator, and he is a really intelligent man",
+            "A wise and intelligent man"
+        ]
+    },
+    {
+        "tag": "hemorrhage",
+        "patterns": [
+                "blood",
+                "bleeding",
+                "losing blood",
+                "hemorrhage",
+                "open wound",
+                "cut"
+        ],
+        "responses": [
+                "Elevate the injured part. Apply pressure until bleeding stops and bind the wound with a cloth or bandage. Immobilize the injured body part."
+        ]
+},
+{
+        "tag": "fracture",
+        "patterns": [
+                "bone",
+                "fracture",
+                "broken bone",
+                "broke",
+                "crack",
+                "break"
+        ],
+        "responses": [
+                "Do not move the injured area, stop any bleeding with a clean cloth and apply ice packs to reduce swelling."
+        ]
+},
+{
+        "tag": "burn",
+        "patterns": [
+                "burn",
+                "fire",
+                "burnt skin"
+        ],
+        "responses": [
+                "Cover the burn with a cloth soaked in cold water and elevate the burned area."
+        ]
+},
+{
+        "tag": "dislocated_joint",
+        "patterns": [
+                "joint",
+                "dislocated",
+                "dislocation",
+                "luxation",
+                "swelling",
+                "swollen"
+        ],
+        "responses": [
+                "Do not move the dislocated joint. Apply ice to reduce swelling. Use ibuprofen in case of unbearable pain."
+        ]
+},
+{
+        "tag": "heart_attack",
+        "patterns": [
+                "heart",
+                "beat",
+                "heartbeat",
+                "heart attack",
+                "heart failure"
+        ],
+        "responses": [
+                "Chew and swallow an aspirin, if not allergic. Loosen any tight clothing. Get into a position in which shoulders and head are supported. In case of an unresponsive patient, perform chest compressions (about 100 to 120 compressions a minute)."
+        ]
+},
+{
+        "tag": "swallowed_poison",
+        "patterns": [
+                "chemicals",
+                "vomiting",
+                "swallow",
+                "pills",
+                "poison",
+                "drink"
+        ],
+        "responses": [
+                "Remove anything remaining in the mouth and rinse it thoroughly. Turn the head to the side to prevent choking in case of vomiting. Keep the product or the medicine container nearby."
+        ]
+},
+{
+        "tag": "external_poison",
+        "patterns": [
+                "chemicals",
+                "skin",
+                "irritation",
+                "eye",
+                "stinging",
+                "red",
+                "itchy",
+                "redness",
+                "poison"
+        ],
+        "responses": [
+                "Remove any contaminated piece of clothing and rinse immediately with cool water for 15 to 20 minutes."
+        ]
+},
+{
+        "tag": "poison_inhalation",
+        "patterns": [
+                "inhaled",
+                "gas",
+                "toxic",
+                "breathe",
+                "poison",
+                "chemicals",
+                "inhalation",
+                "breathed"
+        ],
+        "responses": [
+                "Get to fresh air as soon as possible. Remove any tight clothes, especially around the neck. Warm yourself up if you feel chills."
+        ]
+},
+{
+        "tag": "electrical_shock",
+        "patterns": [
+                "electrocuted",
+                "electric shock",
+                "electricity",
+                "outlet",
+                "cable",
+                "electrocution",
+                "device",
+                "electronic device",
+                "plug"
+        ],
+        "responses": [
+                "Turn off, unplug or move away the source with a dry object made of wood, plastic or cardboard and cover burned areas with a clean cloth. Do not use towels or other fabric as they stick to the skin."
+        ]
+},
+{
+        "tag": "heat_stress",
+        "patterns": [
+                "sweat",
+                "sweating",
+                "faint",
+                "dizzy",
+                "dizziness",
+                "sun",
+                "weak",
+                "weakness",
+                "hot"
+        ],
+        "responses": [
+                "Move to shade, remove tight or heavy clothing and drink cool water. Cool yourself by spraying cool water and fanning. If possible lay down and rinse your head and neck to avoid fading."
+        ]
+},
+{
+        "tag": "hypothermia",
+        "patterns": [
+                "ice",
+                "slow breathing",
+                "shiver",
+                "cold skin",
+                "freeze",
+                "frostbite",
+                "snow",
+                "hypothermia",
+                "weak pulse",
+                "slow pulse",
+                "cold"
+        ],
+        "responses": [
+                "Move from cold or protect neck and head from wind. Remove any wet clothing and replace with dry, warm ones. Further rewarming should be done gradually. Get warm, sweet drinks, excluding alcoholic ones."
+        ]
+},
+{
+        "tag": "eye_injury",
+        "patterns": [
+                "blink",
+                "can't blink",
+                "can not see",
+                "can't see",
+                "vision",
+                "stuck in eye",
+                "object in eye",
+                "eye",
+                "eyeball"
+        ],
+        "responses": [
+                "Do not rub the eye. Try to flush small objects with warm water. In case of a big object or object embedded in the eye, do not attempt to remove it. If blinking is painful, pull the lower eyelid and look upward when blinking."
+        ]
+},
+{
+        "tag": "head_trauma",
+        "patterns": [
+                "head bleeding",
+                "headache",
+                "head",
+                "seizures",
+                "loss of balance",
+                "lost balance",
+                "confusion",
+                "hit"
+        ],
+        "responses": [
+                "Keep still, lay down, and do not move unless necessary. In case of bleeding, apply moderate pressure to the wound with a clean cloth. Avoid moving the neck."
+        ]
+},
+    {
+        "tag": "stories",
+        "patterns": [
+            "Tell me a story?",
+            "Can you tell me a story."
+        ],
+        "responses": [
+            "I can't think of anything right now.",
+            "It would be too long for me to speak.",
+            "You would get bored if I do so."
+        ]
+    },
+    {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+        },
+        { 
+            "tag": "creator", 
+            "patterns": [ 
+            "what is the name of your developers", 
+           "what is the name of your creators", 
+           "what is the name of the developers", 
+           "what is the name of the creators", 
+           "who created you", 
+           "your developers", 
+           "your creators", 
+           "who are your developers", 
+            "developers", 
+           "you are made by", 
+           "you are made by whom", 
+           "who created you", 
+           "who create you", 
+           "creators", 
+           "who made you", 
+           "who designed you"
+            ], 
+            "responses": [ 
+            "Riya, Priya and Shreya developed me in July 2021, for their project", 
+           "I was developed by Riya, Priya and Shreya", 
+           "3 young girls developed me in IGDTUW"
+            ]
+            }, 
+            { 
+            "tag": "name", 
+            "patterns": [ 
+            "name", 
+           "your name", 
+           "do you have a name", 
+           "what are you called", 
+           "what is your name", 
+           "what should I call you", 
+           "whats your name?", 
+           "what are you", 
+           "who are you", 
+           "who is this", 
+           "what am i chatting to", 
+           "who am i taking to", 
+            "what are you"
+            ], 
+            "responses": [ 
+            "You can call me Smart Bot.", 
+           "I'm Smart bot", 
+           "I'm smartbot aka IGDTUW's Chatbot."
+            ]
+            }, 
+            { 
+            "tag": "hours", 
+            "patterns": [ 
+            "timing of college", 
+           "what is college timing", 
+           "working days", 
+           "when are you guys open", 
+           "what are your hours", 
+           "hours of operation", 
+           "when is the college open", 
+           "college timing", 
+           "what about college timing", 
+           "is college open on saturday", 
+           "tell something about college timing", 
+           "what is the college hours", 
+           "when should i come to college", 
+           "when should i attend college", 
+           "what is my college time", 
+           "college timing", 
+           "timing college"
+            ], 
+            "responses": [ 
+            "College is open 9am-5pm Monday-Friday!"
+            ]
+            }, 
+            { 
+            "tag": "number", 
+            "patterns": [ 
+            "more info", 
+           "contact info", 
+           "how to contact college", 
+           "college telephone number", 
+           "college number", 
+           "What is your contact no", 
+           "Contact number?", 
+           "how to call you", 
+           "College phone no?", 
+           "how can i contact you", 
+           "Can i get your phone number", 
+           "how can i call you", 
+           "phone number", 
+           "phone no", 
+           "call"
+            ], 
+            "responses": [ 
+            "You can contact us at 011- 23900261, 23900264"
+            ]
+            }, 
+            { 
+            "tag": "course", 
+            "patterns": [ 
+            "list of courses", 
+           "list of courses offered", 
+           "list of courses offered in igdtuw", 
+           "what are the courses offered in your college?", 
+           "courses?", 
+           "courses offered", 
+           "courses offered in igdtuw", 
+           "courses you offer", 
+           "branches?", 
+           "courses available at IGDTUW?", 
+           "branches available at IGDTUW?", 
+           "what are the courses in IGDTUW?", 
+           "what are branches in IGDTUW?", 
+           "what are courses in igdtuw?", 
+           "branches available in igdtuw?", 
+           "can you tell me the courses available in igdtuw?", 
+           "can you tell me the branches available in igdtuw?"
+            
+            ], 
+            "responses": [ 
+            "Igdtuw currently offers 5 Btech courses, one dual degree course (B.Tech+MBA),One course for B.Arch and One couse of BBA For undergraduates, 4 4 Mtech courses ,MCA, M.Plan and Mba couses for postgraduates, and 10 Ph.D courses."
+            ]
+            }, 
+            { "tag":"B.Tech.", 
+            "patterns":[ 
+            "how many B.Tech streams", 
+           "how many btech streams", 
+            "how many btech fields", 
+           "btech fields available", 
+           "btech streams available", 
+           "types of btech", 
+           "branches in btech available", 
+           "btech branches", 
+           " btech streams", 
+           "btech fields"
+            ], 
+            "responses":[ 
+            " University offers Btech in 5 streams 1. Computer science and artificial Intelligence(CSAI) \n 2. Computer science engineering (CSE) \n 3.Information Technology(IT) \n 4. Electronics and Communication(ECE) \n 5.Mechanical and Automation(MAE)"
+            ], 
+            "context_set":""
+            }, 
+            { 
+            "tag":"M.Tech", 
+            "patterns":[ "how many M.Tech streams", 
+            "how many mtech streams", 
+           "how many mtech fields", 
+           "mtech fields available", 
+           "mtech streams available", 
+           "types of mtech", 
+           "branches in mtech available", 
+           "mtech branches", 
+           " mtech streams", 
+           "mtech fields"
+            
+            ], 
+            "responses":[ 
+            "University offers M.Tech. in 4 streams 1.CSE(Artificial Intelligence) \n 2.IT(Information Security Management) \n 3.ECE(VLSI Design) \n 4.MAE(Robotics and Automation) "
+            ], 
+            "context_set":""
+            }, 
+            { 
+            "tag":"Ph.D.", 
+            "patterns":[ "how many Ph.D. streams", 
+            "how many Ph.D. streams", 
+            "how many phd fields", 
+            "phd fields available", 
+            "phd streams available", 
+            "types of phd", 
+            "branches in phd available", 
+            "phd branches", 
+            " phd streams", 
+            "phd fields"
+            
+            ], 
+            "responses":[ 
+            "University offers Ph.D. in 10 streams 1.Ph.D.(CSE) \n 2.Ph.D.(IT) \n 3.Ph.D.(Computer Applications) \n 4.Ph.D.(ECE) \n 5.Ph.D.(Electrical Engineering) \n 6.Ph.D.(MAE) \n 7.Ph.D.(Physics) \n 8.Ph.D.(chemistry) \n 9.Ph.D.(Mathematics) \n 10.Ph.D.(English)"
+            ], 
+            "context_set":""
+            }, 
+            { 
+            "tag": "fees", 
+            "patterns": [ 
+            "information about fee", 
+           "information on fee", 
+           "tell me the fee", 
+           "college fee", 
+           "fee per semester", 
+           "what is the fee of each semester", 
+           "what is the fees of each year", 
+           "what is fee", 
+           "what is the fees", 
+           "how much is the fees", 
+           "fees for first year", 
+           "fees", 
+           "about the fees", 
+           "tell me something about the fees"
+            ], 
+            "responses": [ 
+            "For Fee detail visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/index.php\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "location", 
+            "patterns": [ 
+            "where is the college located", 
+           "college is located at", 
+           "where is college", 
+           "where is college located", 
+           "address of college", 
+            "how to reach college", 
+           "college location", 
+           "college address", 
+           "wheres the college", 
+           "how can I reach college", 
+           "whats is the college address", 
+           "what is the address of college", 
+           "address", 
+           "location"
+            ], 
+            "responses": [ 
+            "Indira Gandhi Delhi Technical University For Women, Madrasa Road ,Opposite St. James Church Kashmere Gate,Delhi-110006<a target=\"_blank\" href=\"https://goo.gl/maps/YMrH73Pyuyoc21jLA\"> here</a> "
+            ]
+            }, 
+            { 
+            "tag": "hostel", 
+            "patterns": [ 
+            "hostel facility", 
+           "hostel servive", 
+           "hostel location", 
+           "hostel address", 
+           "hostel facilities", 
+           "hostel fees", 
+           "Does college provide hostel", 
+           "Is there any hostel", 
+           "Where is hostel", 
+           "do you have hostel", 
+           "do you guys have hostel", 
+           "hostel", 
+            "hostel capacity", 
+           "what is the hostel fee", 
+           "how to get in hostel", 
+           "what is the hostel address", 
+           "how far is hostel from college", 
+           "hostel college distance", 
+           "where is the hostel", 
+           "how big is the hostel", 
+           "distance between college and hostel", 
+           "distance between hostel and college"
+            ], 
+            "responses": [ 
+            "Indira Gandhi Delhi Technical University For Women , provide hostel facility"
+            ]
+            }, 
+            { 
+            "tag": "event", 
+            "patterns": [ 
+            "events organised", 
+           "list of events", 
+           "list of events organised in college", 
+           "list of events conducted in college", 
+           "What events are conducted in college", 
+           "Are there any event held at college", 
+           "Events?", 
+           "functions", 
+           "what are the events", 
+           "tell me about events", 
+           "what about events"
+            ], 
+            "responses": [ 
+            "There is annual sports meet,various cultural and technical festivals organized by different societies. For more information you can visit college Website <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/studentlife.php?id=6\"> here "
+            ]
+            }, 
+            { 
+            "tag": "document", 
+            "patterns": [ 
+            "document to bring", 
+           "documents needed for admision", 
+           "documents needed at the time of admission", 
+           "documents needed during admission", 
+           "documents required for admision", 
+           "documents required at the time of admission", 
+           "documents required during admission", 
+           "What document are required for admission", 
+           "Which document to bring for admission", 
+           "documents", 
+           "what documents do i need", 
+           "what documents do I need for admission", 
+           "documents needed"
+            ], 
+            "responses": [ 
+            "The marksheet of class 12th and 10th, Character certificate, caste certificate(if not general),School leaving certificate, Two passpoert size photographs, Admit Card, Nta scores(B.Tech) and migration certificate"
+            ]
+            }, 
+            { 
+            "tag": "floors", 
+            "patterns": [ 
+            "size of campus", 
+           "building size", 
+           "How many floors does college have", 
+           "floors in college", 
+           "floors in college", 
+           "how tall is IGDTUW college building", 
+           "floors"
+            ], 
+            "responses": [ 
+            "For more information on various departments and infrastructures please visit our website.<atarget=\"_blank\" href=\"https://www.igdtuw.ac.in/index.php\"> here</a> "
+            ]
+            }, 
+            { 
+            "tag": "syllabus", 
+            "patterns": [ 
+            "Syllabus for IT", 
+           "what is the Information Technology syllabus", 
+           "syllabus", 
+           "timetable", 
+           "what is IT syllabus", 
+           "syllabus", 
+           "What is next lecture", 
+           "syllabus for Computer science ","about holidays", 
+           "syllabus for ece", 
+           "syllabus for btech", 
+           "syllabus for mtech"
+            ], 
+            "responses": [ 
+            "To know about syllabus and timetable visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/Academics.php?id=3\"> here</a>"
+            
+            ]
+            }, 
+            { 
+            "tag": "library", 
+            "patterns": [ 
+            "is there any library", 
+           "library facility", 
+           "library facilities", 
+           "do you have library", 
+           "does the college have library facility", 
+           "college library", 
+           "where can i get books", 
+           "book facility", 
+           "Where is library", 
+           "Library", 
+           "Tell me about library", 
+           "how many libraries"
+            ], 
+            "responses": [ 
+            "To know about library or our Learning Resource Center(LCR) visit <a target=\"_blank\" href= \"https://www.igdtuw.ac.in/Library.php\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "infrastructure", 
+            "patterns": [ 
+            "how is college infrastructure", 
+           "infrastructure", 
+           "college infrastructure"
+            ], 
+            "responses": [ 
+            "University campus has auditorium, convinience store, good wifi connectivity,Medical facilities, labs, sport complex,two women's hostel ans library. For more information on infrastrucure visit our website <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/index.php\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "canteen", 
+            "patterns": [ 
+            "food facilities", 
+           "canteen facilities", 
+           "canteen facility", 
+           "is there any canteen", 
+           "Is there a cafetaria in college", 
+           "Does college have canteen", 
+           "Where is canteen", 
+           "where is cafetaria", 
+           "canteen", 
+           "Cafetaria"
+            ], 
+            "responses": [ 
+            "Yes campus has one canteen and one cafeteria"
+            ]
+            }, 
+            { 
+            "tag": "menu", 
+            "patterns": [ 
+            "food menu", 
+           "food in canteen", 
+           "Whats there on menu", 
+           "what is available in college canteen", 
+           "what foods can we get in college canteen"
+            ], 
+            "responses": [ 
+            "College canteen serve various kinds of packed and unpacked food"
+            ]
+            }, 
+            { 
+            "tag": "placement", 
+            "patterns": [ 
+            "What is college placement", 
+           "Which companies visit in college", 
+           "What is average package", 
+           "companies visit", 
+           "package", 
+           "placement", 
+           "recruitment", 
+           "companies"
+            ], 
+            "responses": [ 
+            "To know about placement visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/placements.php\"> here</a> "
+            ]
+            }, 
+            { 
+            "tag": "applied science hod", 
+            "patterns": [ 
+            "Who is applied sciences hod", 
+           "Where is applied sciences hod", 
+           "applied sciences and humanities hod", 
+           "name of applied sciences and humaniyies hod", 
+           "applied sciences", 
+           "humanities", 
+           "applied sciences and humanities"
+            ], 
+            "responses": [ 
+            "Prof. Chhaya Ravi Kant is HOD of Applied Sciences and Humanities department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/appliedScience.php\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "csehod", 
+            "patterns": [ 
+            "Who is CSE HOD", 
+           "Where is CSE HOD", 
+           "cse hod", 
+           "name of cse hod", 
+           "CSE HOD", 
+           "CSE hod"
+            ], 
+            "responses": [ 
+            " Prof. Seeja K.R. is HOD of Computer Science $ Engineering department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/computerScience.php?id=1\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "ecehod", 
+            "patterns": [ 
+            "Who is ECE HOD", 
+           "Where is ECE HOD", 
+           "ece hod", 
+           "name of ece hod", 
+           "ECE HOD", 
+           "Ece hod"
+            ], 
+            "responses": [ 
+            "Dr. Nidhi Goel is HOD of Electronics and communication Engineering department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/ece.php?id=6\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "ithod", 
+            "patterns": [ 
+            "Who is IT HOD", 
+           "Where is IT HOD", 
+           "it hod", 
+           "name of it hod", 
+           "IT HOD", 
+           "IT hod"
+            ], 
+            "responses": [ 
+            "Prof. Amar k. Mohapatra is HOD of Information Technology department. For more information visit<a target=\"_blank\" href=\"https://www.igdtuw.ac.in/itdepartment.php?id=1\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "architecture hod", 
+            "patterns": [ 
+            "Who is architecture department HOD", 
+           "Where is architecture dept HOD", 
+           "architecture hod", 
+           "name of architecture hod", 
+           "architecture department HOD", 
+           "Architecture HOD"
+            ], 
+            "responses": [ 
+            "Ar. Vishal Rai is HOD of Architecture and Planning department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/architecture.php?id=6\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "mechhod", 
+            "patterns": [ 
+            "Who is mechanical HOD", 
+           "Where is mechanical HOD", 
+           "mechanical hod", 
+           "name of mechanical hod", 
+            "mechanical HOD", 
+           "mechanical HOD"
+            ], 
+            "responses": [ 
+            "Prof. Nathi Ram Chauhan is HOD of Mechanical and Automation department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/mechanical.php?id=6\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "managementhod", 
+            "patterns": [ 
+            "Who is management HOD", 
+           "Where is management HOD", 
+           "management hod", 
+           "name of management hod", 
+           "management HOD", 
+           "management HOD"
+            ], 
+            "responses": [ 
+            "Prof. Shalini Arora is HOD of Management department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/managementDept.php?id=1\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag":"aihod", 
+            "patterns": [ 
+            "Who is ai HOD", 
+           "Where is AI HOD", 
+            "AI hod", 
+           "name of ai hod", 
+           "AI HOD", 
+           "ai HOD"
+            ], 
+            "responses": [ 
+            "Prof. Arun Sharma is HOD of Artificial intelligence and Data Sciences department. For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/aids.php?id=1\"> here</a>"
+            ]
+            }, 
+            { 
+            "tag": "Chancellor", 
+            "patterns": [ 
+            "what is the name of vice chancellor", 
+           "whatv is the vice chancellors name", 
+           "vice chancellor name", 
+           "Who is college chancellor", 
+           "Where is chancellors office", 
+           "vice chancellor", 
+           "name of vice chancellor", 
+           "chancellor"
+            ], 
+            "responses": [ 
+            "Dr.Anil Baijal is chancellor and Dr.Amita Dev is vice chancellor of university. To know more about university administration visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/AboutUs.php?id=10\">here</a>"
+            ]
+            }, 
+            { 
+            "tag": "sem", 
+            "patterns": [ 
+            "exam dates", 
+           "exam schedule", 
+           "When is semester exam", 
+           "Semester exam timetable", 
+           "sem", 
+           "semester", 
+           "exam", 
+           "when is exam", 
+           "exam timetable", 
+           "exam dates", 
+           "when is semester"
+            ], 
+            "responses": [ 
+            "Here is the Academic Calendar <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/examinations.php?id=2\">here</a>"
+            ]
+            }, 
+            { 
+            "tag": "admission", 
+            "patterns": [ 
+            "what is the process of admission", 
+            "what is the admission process", 
+           "How to take admission in your college", 
+           "What is the process for admission", 
+           "admission", 
+           "admission process"
+            ], 
+            "responses": [ 
+            "Admission to various B.Tech. and B. Arch. course in based on All India Rank in Jee Mains exam through JAC Delhi counselling.Admission to various post Graduate and Ph. D. programmes are done by filling the form available on our website. <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/index.php\"> here</a> "
+            ]
+            }, 
+            { 
+            "tag": "facilities", 
+            "patterns": [ 
+            "What facilities college provide", 
+           "College facility", 
+           "What are college facilities", 
+           "facilities", 
+           "facilities provided"
+            ], 
+            "responses": [ 
+            "IGDTUW provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+            ]
+            }, 
+            { 
+            "tag": "college intake", 
+            "patterns": [ 
+            "max number of students", 
+           "number of seats per branch", 
+           "number of seats in each branch", 
+           "maximum number of seats", 
+           "maximum students intake", 
+           "What is college intake", 
+           "how many stundent are taken in each branch", 
+           "seat allotment", 
+           "seats"
+            ], 
+            "responses": [ 
+            "University offers around 600 seats for B.Tech., 40 for B.Arch. and 75 for B.B.A. ,128 Seatsfor Mtech,76 each for M.C.A and M.B.A.For more information visit <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/Admission.php?id=6\">here</a>"
+            ]
+            }, 
+            { 
+            "tag": "uniform", 
+            "patterns": [ 
+            "college dress code", 
+           "college dresscode", 
+           "what is the uniform", 
+           "can we wear casuals", 
+           "Does college have an uniform", 
+           "Is there any uniform", 
+           "uniform", 
+           "what about uniform", 
+           "do we have to wear uniform"
+            ], 
+            "responses": [ 
+            "IGDTUW does not have uniform"
+            ]
+            }, 
+            { 
+            "tag": "committee", 
+            "patterns": [ 
+            "what are the different committe in college", 
+           "different committee in college", 
+           "Are there any committee in college", 
+           "Give me committee details", 
+           "committee", 
+           "how many committee are there in college"
+            ], 
+            "responses": [ 
+            "There are various committe in college you can see at <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/studentlife.php?id=2\">here</a> "
+            ]
+            }, 
+            { 
+            "tag": "random", 
+            "patterns": [ 
+            
+            "I love you", 
+           "Will you marry me", 
+           "Do you love me"
+            ], 
+            "responses": [ 
+            "I am not program for this please ask appropriate query"
+            ]
+            }, 
+            { 
+            "tag": "vacation", 
+            "patterns": [ 
+            "holidays", 
+           "when will semester starts", 
+           "when will semester end", 
+           "when is the holidays", 
+           "list of holidays", 
+           "about vacations", 
+           "about holidays", 
+           "When is vacation", 
+           "When is holidays", 
+           "how long will be the vacation"
+            ], 
+            "responses": [ 
+            "Please refer academic calendar <a target=\"_blank\" href=\"https://www.igdtuw.ac.in/Academics.php?id=4\">here</a>"
+            ]
+            }, 
+            { 
+            "tag": "salutaion", 
+            "patterns": [ 
+            "okk", 
+           "okie", 
+           "nice work", 
+           "well done", 
+           "good job", 
+           "thanks for the help", 
+            "Thank You", 
+           "its ok", 
+           "Thanks", 
+           "k", 
+           "ok", 
+           "okay"
+            ], 
+            "responses": [ 
+            "I am glad I helped you", 
+           "welcome, anything else i can assist you with?"
+            ]
+            }, 
+            { 
+            "tag": "task", 
+            "patterns": [ 
+            "what can you do", 
+           "what are the thing you can do", 
+           "things you can do", 
+           "what can u do for me", 
+           "how u can help me", 
+           "why i should use you"
+            ], 
+            "responses": [ 
+            "I can answer to low-intermediate questions regarding college", 
+           "You can ask me questions regarding college, and i will try to answer them"
+            ]
+            }, 
+            { 
+            "tag":"ragging", 
+            "patterns":[ 
+            "ragging", 
+           "is ragging practice active in college", 
+           "does college have any antiragging facility", 
+           "is there any ragging cases", 
+           "is ragging done here", 
+           "ragging juniors", 
+           "ragging history", 
+           "ragging incidents"
+            
+            ], 
+            "responses": [ 
+            "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+            ] 
+            }, 
+            { 
+            "tag":"hod", 
+            "patterns":[ 
+            "hod", 
+           "hod name", 
+           "who is the hod"
+            ], 
+            "responses":[ 
+            "HODs differ for each branch, please be more specific like: (HOD it)"
+            ] 
+            }, 
+            { 
+            "tag":"transport", 
+            "patterns":[ 
+            "dtc bus route", 
+           "mode of transportation", 
+           "how to get to college", 
+           "buses for college", 
+           "college buses", 
+           "bus routes", 
+           "list of buses for travelling", 
+           "does 835 goes to college", 
+           "does 835 goes to rawta mor"
+            
+            ], 
+            "responses":[ 
+            " Bus: 114ST+901, 171, 246, 405, 621, 729, 937A, IGT4EXP are some of appropriate buses to reach Igdtuw"
+            ] 
+            }, 
+            { 
+            "tag": "metro", 
+            "patterns":[ 
+            "nearest metro station", 
+           "what is the nearest metro station", 
+           "which metro station is near", 
+           "closest metro station", 
+           "which metro station is closest", 
+           "nearby metro stations", 
+           "metro", 
+           "metro station nearby"
+            ], 
+            "responses":[ 
+            "Kashmere Gate metro station"
+            ] 
+            }, 
+            { 
+            "tag":"fall-back", 
+            "patterns":[ 
+            
+            ], 
+            "responses":[ 
+            " I am sorry I am still learning.", 
+           "I didn't catch that. Could you please rephrase?", 
+           "I am sorry I cannot help you with that yet."
+            ] 
+            },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"]
+        },
+        {
+            "tag": "Anger",
+            "patterns": [
+              "Hey calm down",
+              "Hey",
+              "How are you",
+              "Is anyone there?",
+              "Hello",
+              "Good day"
+            ],
+            "responses": [
+              "Hey calm down",
+              "Calm down",
+              "Tone it down",
+              "It's okay to be angry",
+              "Relax! And tell me what's wrong.",
+              "That's not right, tell me more",
+              "How can I help you?" 
+            ]
+          },
+          {
+            "tag": "Fear",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": [
+              "Don't be afraid",
+              "It's ok to feel afraid",
+              "Stay strong",
+              "Don't worry",
+              "How can I help you?"
+            ]
+          },
+          {
+            "tag": "Hapiness",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+            "responses": ["What makes you so cheerful today?","what's the reason behind your happiness?","Had a good day today?","That's great!"]
+          },
+          {
+            "tag": "Neutral",
+            "patterns": [
+              "What services do you provide?",
+              "What kinds of services are there?",
+              "What do you sell?"
+            ],
+            "responses": [
+              "How are you?",
+              "How was your day?",
+              "What makes you happy?"
+            ]
+          },
+          {
+            "tag": "Sadness",
+            "patterns": [
+              "Do you take credit cards?",
+              "Do you accept Mastercard?",
+              "Can I pay with PayTM?",
+              "Are you cash only?"
+            ],
+            "responses": [
+              "Cheer up! Tell me what's wrong.",
+              "It's ok to feel like that",
+              "Keep smiling"
+            ]
+          },
+          {
+            "tag": "Disgust",
+            "patterns": [
+              "How was this created?",
+              "How long did it take to create this?"
+            ],
+            "responses": [
+              "Cheer up! Tell me what's wrong.",
+              "It's ok to feel like that",
+              "Everything okay?",
+              "How can I help you?"
+            ]
+          },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"]
+        },
+      {"tag": "noanswer",
+        "patterns": [""],
+        "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "Did you just say anything?"]
+        },
+      {"tag": "greeting",
+       "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey","Hi"],
+       "responses": ["Hi Sonia", "Hello Sonia,How can I help","Hola Sonia", "Hello Sonia,How Can I help you?", "Thanks for visiting Sonia,How can I help you?"]
+      },
+      {"tag": "goodbye",
+       "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+       "responses": ["See you!", "Have a nice day","See you,Do call me whenever you need my assistance"]
+      },
+      {"tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome"]
+      },
+      
+       {"tag": "name",
+        "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Tell me about yourself", "You are"],
+        "responses": ["I am Ericsson Bot", "My name is Ericsson Bot", "You can call me Eric Bot", "I am Ericsson Bot, my friends call me Eric", "Ericsson Bot is my name"]
+        },
+        {"tag": "options",
+         "patterns": ["What do you do", "How can you help", "What do you know", "What is your purpose", "How can you help"],
+         "responses": ["I can tell you about navigating through the use case site", "I can assist you with the details that are in the submission of use cases and pain points"]
+        },
+        {"tag": "about",
+         "patterns": ["Why this portal","What is this portal for","Tell me about the portal","What can I do in this portal"],
+         "responses": [
+           "This portal is for submitting use cases and pain points related to data in the repository"
+         ]
+        },
+        {"tag": "access",
+            "patterns": ["Who can access this portal","Can I access the portal","Can people outside of Ericsson access this portal?","access information of the portal","Can you tell me about who can access this portal"],
+            "responses": [
+              "Any Ericsson employee with valid credentials can get an access to the portal"
+            ]
+        },
+        {"tag": "submitted_usecase_info",
+            "patterns": ["Where will my submitted use cases go","Where will the submitted usecases go","To which place my usecases sent after submission","If I submit my usecase now where will it be sent","After submission of the usecase where will it go"],
+            "responses": [
+              "To the Data Enablement Office where the domain roll-out strategy is determined, and it helps domains to determine the critical data elements to be governed."
+            ]
+        },
+        {"tag": "queries",
+            "patterns": ["I have a few queries where should I go","who will resolve my queries","My queries will be resolved by whom","Who will answer my queries"],
+            "responses": [
+              "You can contact PDLCSSONDA@pdl.internal.ericsson.com for finding answers to specific queries"
+            ]
+        },
+        {"tag": "usecase_approval_person",
+            "patterns": ["Who will approve my usecase","I have submitted my usecase is there someone who approves it","approval of the usecase is done by whom?"],
+            "responses": [
+              "Our highly skilled Data Strategy Driver assesses the data in terms of the use case's feasibility,the impact it creates and finally approves the usecase provided by a stakeholder."
+            ]
+        },
+        {"tag": "usecase_approval_time",
+            "patterns": ["When will my usecase be approved","I have submitted my usecase when will it get approved","when will the submitted usecases be approved"],
+            "responses": [
+              "Your usecase will be approved as soon as it is verified by our coordinator team for the required mandatory fields."
+            ]
+        },
+        {"tag": "usecase_approval_info",
+            "patterns": ["If my usecase has been successfully created or approved,is it confirmed that my use case is selected","I have created my usecase will it be selected","My use case has been approved does that mean my usecase is selected"],
+            "responses": [
+              "Unfortunately No.Our team passes your usecase through various stages and your usecase will be shortlisted based on the impact it creates and its feasibility"
+            ]
+        },
+        {"tag": "pain_points_person",
+            "patterns": ["Who will approve my painpoint","I have submitted my pain point is there someone who approves it","approval of the pain point is done by whom?"],
+            "responses": [
+              "The Domain team/Enablers will choose the most relevant pain points"
+            ]
+       },
+       {"tag": "pain_points_in_progress",
+        "patterns": ["What does the stage in progress mean","The current status of my pain point is in progress what does that mean","My pain point is in progress what do you mean by that"],
+        "responses": [
+          "In progress means that the pain point has been selected and work has been going on to resolve it"
+        ]
+   },
+   {"tag": "pain_points_wait",
+    "patterns": ["waiting for implementation mean","what do you mean by waiting for implementation","waiting for implemenatation is the current status of my pain point what does that mean"],
+    "responses": [
+      "This means that the Domain team/Enablers are awaiting for a system/product to get implemented for resolving the required functionality pointed out in the pain point."
+    ]
+},
+{"tag": "pain_points_done",
+    "patterns": ["Done meaning in the status of pain point","what do you mean by done in the status","Done is the current status of my pain point what does that mean"],
+    "responses": [
+      "Done means that the pain point has been resolved and it satisfies the expectations of the stakeholder who proposed the pain point"
+    ]
+},
+{"tag": "usecase_define",
+    "patterns": ["what do you mean by a usecase","what is a usecase","what is even a usecase","why should I provide a usecase"],
+    "responses": [
+      "A usecase addresses a business need with a specific purpose and a clear impact"
+      
+    ]
+},
+{"tag": "usecase_updation",
+    "patterns": ["Should I periodically update my usecase","Is updating the usecase necessary","Why should I update my usecase every now and then","How good it is to update the usecase that I provided","I have to make some changes in my usecase can I do that"],
+    "responses": [
+     "Updating a usecase will ensure its effectiveness,relevance and accuracy",
+     "Yes,absolutely you should update the usecase.This ensures that the usecase is effective,relevant and accurate",
+     "Yes,you should consider updating the usecase,this ensures that the usecase is up-to-date and is also relevant and feasible"
+    ]
+},
+{"tag": "usecase_no_pain_points",
+    "patterns": ["Can I have a usecase without pain points","Is submitting a usecase without pain points feasible","Minimum number of pain points"],
+    "responses": [
+     "No you cannot have a usecase having no pain points",
+     "Sorry,you must have atleast 1 pain point for your usecase",
+     "You should atleast have 1 pain point for your usecase"
+
+    ]
+},
+{
+  "tag":"usecase_assessment",
+  "patterns":["What is the timeline for data use case assessment?","What is the timeline for data use case implementation?"],
+  "responses":["3 weeks for E2E use case evaluation"]
+},
+{
+  "tag":"usecase_funding",
+  "patterns":["Who funds the data use case implementation?"],
+  "responses":["MA/BA/GF funds the use case implementation. Data Domains are responsible for designing a solution. Implementation of the solution has to carried out by the usecase themselves"]
+}
+]
+}
