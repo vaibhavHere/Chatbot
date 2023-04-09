@@ -33,9 +33,11 @@ python app.js
 </ol>
 
 ## Enhancements!
-Include more NLP models for multilingual support.
-Add more customizable features, such as font size and chat bubble styles.
-Notification badges and sounds.
+<ul>
+<li>Include more NLP models for multilingual support.
+<li>Add more customizable features, such as font size and chat bubble styles.
+<li>Notification badges and sounds.
+</ul>
 
 ## Credits
 This project was created as part of an internship @<b><a href="www.ericsson.com">Ericsson</a></b>
